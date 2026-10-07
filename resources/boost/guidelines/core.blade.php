@@ -6,7 +6,7 @@ Filament settings page for jeffersongoncalves/laravel-discord-logger, backed by 
 
 @verbatim
 <code-snippet name="Install the plugin" lang="bash">
-composer require jeffersongoncalves/filament-discord-logger:"^2.0"
+composer require jeffersongoncalves/filament-discord-logger:"^3.0"
 php artisan migrate
 </code-snippet>
 @endverbatim

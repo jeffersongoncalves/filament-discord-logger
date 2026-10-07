@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Discord Logger](https://raw.githubusercontent.com/jeffersongoncalves/filament-discord-logger/2.x/art/jeffersongoncalves-filament-discord-logger.png)
+![Filament Discord Logger](https://raw.githubusercontent.com/jeffersongoncalves/filament-discord-logger/3.x/art/jeffersongoncalves-filament-discord-logger.png)
 
 </div>
 
@@ -9,7 +9,7 @@
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-discord-logger.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-discord-logger)
-[![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-discord-logger/tests.yml?branch=2.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-discord-logger/actions?query=workflow%3ATests+branch%3A2.x)
+[![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-discord-logger/tests.yml?branch=3.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-discord-logger/actions?query=workflow%3ATests+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-discord-logger.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-discord-logger)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-discord-logger.svg?style=flat-square)](LICENSE.md)
 
@@ -28,7 +28,7 @@ Built on top of [jeffersongoncalves/laravel-settings-discord-logger](https://git
 ## Installation
 
 ```bash
-composer require jeffersongoncalves/filament-discord-logger:"^2.0"
+composer require jeffersongoncalves/filament-discord-logger:"^3.0"
 php artisan migrate
 ```
 
@@ -81,7 +81,7 @@ DiscordLoggerPlugin::make()
 ## Requirements
 
 - PHP 8.2 or higher
-- Filament 4.x
+- Filament 5.x
 
 ## Testing
 
