@@ -3,19 +3,19 @@
 namespace JeffersonGoncalves\Filament\DiscordLogger\Pages;
 
 use Filament\Forms\Components\KeyValue;
-use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use JeffersonGoncalves\SettingsDiscordLogger\Settings\DiscordLoggerSettings;
 
 class ManageDiscordLoggerSettings extends SettingsPage
 {
     protected static string $settings = DiscordLoggerSettings::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-bell-alert';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-bell-alert';
 
     public const LEVELS = ['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'];
 
@@ -24,7 +24,7 @@ class ManageDiscordLoggerSettings extends SettingsPage
         return __('filament-discord-logger::pages.navigation_label');
     }
 
-    public static function getNavigationGroup(): ?string
+    public static function getNavigationGroup(): string|\UnitEnum|null
     {
         return __('filament-discord-logger::pages.navigation_group');
     }
@@ -34,9 +34,10 @@ class ManageDiscordLoggerSettings extends SettingsPage
         return __('filament-discord-logger::pages.title');
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
+            ->columns(null)
             ->schema([
                 Section::make(__('filament-discord-logger::pages.sections.delivery.heading'))
                     ->description(__('filament-discord-logger::pages.sections.delivery.description'))
