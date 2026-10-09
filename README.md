@@ -78,6 +78,15 @@ DiscordLoggerPlugin::make()
     ->settingsPage(false), // don't register the settings page
 ```
 
+### Navigation group
+
+Put the settings page in one of your panel's own navigation groups (a string or a closure):
+
+```php
+DiscordLoggerPlugin::make()
+    ->navigationGroup(fn (): string => __('admin.navigation.settings')),
+```
+
 ## Requirements
 
 - PHP 8.2 or higher
