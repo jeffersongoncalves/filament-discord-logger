@@ -9,6 +9,7 @@ use Filament\Forms\Components\Toggle;
 use Filament\Pages\SettingsPage;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsPlugin;
 use JeffersonGoncalves\SettingsDiscordLogger\Settings\DiscordLoggerSettings;
 
 class ManageDiscordLoggerSettings extends SettingsPage
@@ -26,7 +27,7 @@ class ManageDiscordLoggerSettings extends SettingsPage
 
     public static function getNavigationGroup(): string|\UnitEnum|null
     {
-        return __('filament-discord-logger::pages.navigation_group');
+        return AbstractAnalyticsPlugin::navigationGroupFor('filament-discord-logger') ?? __('filament-discord-logger::pages.navigation_group');
     }
 
     public function getTitle(): string
